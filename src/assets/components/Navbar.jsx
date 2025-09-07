@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heart, Menu, X } from 'lucide-react';
+import { Heart, Menu, X, Globe } from 'lucide-react';
 import { useState } from "react";
 import { motion } from 'framer-motion';
 export default function Navbar(){
@@ -30,6 +30,10 @@ export default function Navbar(){
                         <button className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-colors font-medium">
                             Get Started
                         </button>
+                        <div className="flex items-center space-x-2 cursor-pointer">
+                            <Globe className="w-5 h-5 text-indigo-600" />
+                            <span className="text-gray-700 font-medium">EN</span>
+                        </div>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -55,6 +59,11 @@ export default function Navbar(){
                             <a href="#about" className="text-gray-600 hover:text-indigo-600 font-medium">About</a>
                             <a href="#testimonials" className="text-gray-600 hover:text-indigo-600 font-medium">Testimonials</a>
                             <a href="#contact" className="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+                            <div className="flex items-center space-x-2 cursor-pointer pt-2">
+                                <Globe className="w-5 h-5 text-indigo-600" />
+                                <span className="text-gray-700 font-medium">EN</span>
+                            </div>
+
                             <div className="flex space-x-4 pt-4">
                                 <button className="text-indigo-600 hover:text-indigo-800 font-medium flex-1 text-center">Log In</button>
                                 <button className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-colors font-medium flex-1">
